@@ -1,0 +1,43 @@
+<!doctype html>
+    <html>
+    	<head>
+			<title>A Simple App</title>
+			<link href="style.css" rel="stylesheet" type="text/css"> 
+		</head>
+<body>
+	<header>
+	</header>
+	<main>
+	<!-- note that we use a dash here for our class name that contains
+		multiple words, that's a CSS convention --> 
+		<section class="comment-input">
+			<p>Add your Comment:</p>
+			<input type="text"><button>+</button>
+		</section>
+
+		<section class="comments">
+			<p>This is the first comment!</p>
+			<p>Here's the second one!</p>
+			<p>And this is one more.</p>
+			<p>Here is another one</p>
+		</section>
+	</main>
+
+	<footer>
+		
+	</footer>
+	
+	<!--
+		We chose to place the <script> tags in the body element instead
+		of the head for a technical reason: the browser displays the page
+		in a top-down fashion, creating the DOM elements as it comes 
+		across them in th HTML document. By placing <script> tags at the
+		end, the Javascript files will be one of the last things the page
+		loads. Because JavaScript files are often very large and take
+		a bit of time to load, we like to do that last so that the user will
+		get visual feedback from the other elements as fast as possible.
+	-->
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="app.js"></script> </body>
+
+</html>
